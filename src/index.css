@@ -7,7 +7,964 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.red {
+  color: red !important;
+}
+.lightyellow {
+  color: yellow
+}
+.yellow {
+  color: rgba(255, 208, 0, 0.911);
+}
+.orange {
+  color: orange;
+}
+.blue {
+  color: rgb(18, 129, 255)
+}
+.green {
+  color: green;
+}
+.purple {
+  color: purple !important;
+}
+.pink {
+  color: palevioletred;
+}
+.grey {
+  color: grey !important;
+}
+.black {
+  color: black !important;
+}
+.bold {
+  font-weight: bold;
+}
+.green-text {
+  font-weight: bold;
+  color: green;
+}
+
+.hoverable:hover {
+  cursor: pointer;
+}
+
+.map-tile {
+  width: 2500px;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+.app {
+  padding-left:150px;
+  padding-top:150px;
+  width: 2478px;
+  height: 2808px;
+  background-color: grey;
+}
+
+#main {
+  background-size: 100%;
+  width: 1478px;
+  height: 2208px;
+  color: black;
+}
+
+.map-row {
+  display: flex;
+  height: 100px;
+}
+
+.log-wrapper {
+  min-height: 400px;
+  width: 305px;
+  background-color: honeydew;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.30);
+  text-align: left;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.modal-title {
+  margin-left: auto;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-footer {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modalTrigger {
+  display: none;
+}
+
+.craft-pick-wrapper, .objective-pick-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 400px;
+}
+.craft-pick-wrapper > div {
+  width: calc(100% / 5);
+  padding: 10px 10px 10px 10px;
+}
+.craft-title, .objective-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.craft-btn {
+  margin-top: 20px;
+  width: 130px;
+}
+
+.footer-text {
+  margin-bottom: 15px;
+}
+
+.footer-button, .footer-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.footer-button, .footer-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.player-wrapper {
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  z-index: 3;
+
+  .player-name {
+    background-color: rgba(0, 0, 0, .85);
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .player {
+    width: 80px;
+    height: 110px;
+    background-size: cover;
+  }
+}
+
+.alien {
+  background-size: cover;
+  position: absolute;
+  z-index: 3;
+}
+
+.alien-wrapper {
+  position: absolute;
+  z-index: 3;
+}
+
+.alien-adult {
+  width: 150px;
+  height: 150px;
+}
+
+.marker {
+  background-size: cover;
+  position: absolute;
+  z-index: 3;
+}
+
+.marker-wrapper {
+  position: absolute;
+  z-index: 3;
+}
+
+.marker-noise {
+  width: 50px;
+  height: 50px;
+}
+
+.flex-container {
+  /* margin-top: 150px; */
+  /* margin-left: 150px; */
+}
+
+.zone {
+  /* border: 1px solid green; */
+  width: 221px;
+  height: 195px;
+  position: absolute;
+  background-size: cover !important;
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+.pass {
+  border: 3px solid red;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+}
+
+.map-1 {
+  .zone-1 {
+    left: 342px;
+    top: 164px;
+  }
+  .zone-2 {
+    left: 770px;
+    top: 173px;
+  }
+  .zone-3 {
+    left: 237px;
+    top: 500px;
+  }
+  .zone-4 {
+    left: 620px;
+    top: 497px;
+  }
+  .zone-5 {
+    left: -15px;
+    top: 292px;
+  }
+
+  .zone-6 {
+    left: 467px;
+    top: 811px;
+  }
+  .zone-7 {
+    left: 878px;
+    top: 811px;
+  }
+  .zone-8 {
+    left: 1184px;
+    top: 845px;
+  }
+  .zone-9 {
+    left: 250px;
+    top: 1037px;
+  }
+  .zone-10 {
+    left: 671px;
+    top: 1026px;
+  }
+  .zone-11 {
+    left: 1184px;
+    top: 1135px;
+  }
+  .zone-12 {
+    left: 462px;
+    top: 1242px;
+  }
+  .zone-13 {
+    left: 912px;
+    top: 1245px;
+  }
+  .zone-14 {
+    left: -10px;
+    top: 1034px;
+  }
+
+  .zone-15 {
+    left: 534px;
+    top: 1506px;
+  }
+  .zone-16 {
+    left: 303px;
+    top: 1598px;
+  }
+  .zone-17 {
+    left: 773px;
+    top: 1603px;
+  }
+  .zone-18 {
+    left: 1178px;
+    top: 1598px;
+  }
+  .zone-19 {
+    left: 1003px;
+    top: 1779px;
+  }
+  .zone-20 {
+    left: 257px;
+    top: 1840px;
+  }
+  .zone-21 {
+    left: 522px;
+    top: 1842px;
+  }
+  .zone-22 {
+    left: 795px;
+    top: 1974px;
+  }
+  .zone-23 {
+    left: 1178px;
+    top: 1973px;
+  }
+  .zone-24 {
+    left: -10px;
+    top: 1734px;
+  }
+
+  .pass-1 {
+    left: 371px;
+    top: 423px
+  }
+  .pass-2 {
+    left: 758px;
+    top: 399px
+  }
+  .pass-3 {
+    left: 698px;
+    top: 533px
+  }
+  .pass-4 {
+    width: 100px;
+    height: 100px;
+    left: 316px;
+    top: 593px
+  }
+  .pass-5 {
+    left: 635px;
+    top: 769px
+  }
+  .pass-6 {
+    left: 1175px;
+    top: 746px
+  }
+  .pass-7 {
+    left: 186px;
+    top: 696px
+  }
+
+  .pass-8 {
+    height: 170px;
+    left: 331px;
+    top: 1421px;
+  }
+
+  .pass-9 {
+    left: 478px;
+    top: 992px;
+  }
+  .pass-10 {
+    left: 874px;
+    top: 916px;
+  }
+  .pass-11 {
+    width: 100px;
+    height: 100px;
+    left: 1248px;
+    top: 960px;
+  }
+  .pass-12 {
+    left: 698px;
+    top: 1169px;
+  }
+  .pass-13 {
+    width: 180px;
+    left: 1120px;
+    top: 1185px;
+  }
+  .pass-14 {
+    width: 100px;
+    height: 100px;
+    left: 1395px;
+    top: 1184px;
+  }
+  .pass-15 {
+    left: 482px;
+    top: 1460px;
+  }
+  .pass-16 {
+    left: 877px;
+    top: 1436px;
+  }
+  .pass-17 {
+    width: 100px;
+    height: 100px;
+    left: 999px;
+    top: 1338px;
+  }
+  .pass-18 {
+    left: 1337px;
+    top: 1541px;
+  }
+  .pass-19 {
+    left: 698px;
+    top: 1169px;
+  }
+  .pass-20 {
+    width: 100px;
+    height: 100px;
+    left: 1517px;
+    top: 928px;
+  }
+  .pass-21 {
+    width: 100px;
+    height: 100px;
+    left: 1500px;
+    top: 1474px;
+  }
+  .pass-22 {
+    left: 199px;
+    top: 1019px;
+  }
+  .pass-23 {
+    left: 200px;
+    top: 1433px;
+  }
+}
+
+/* .map-2 {
+  .zone-1 {
+    left: 110px;
+    top: 105px;
+  }
+  .zone-2 {
+    left: 408px;
+    top: 105px;
+  }
+  .zone-3 {
+    left: 190px;
+    top: 330px;
+  }
+  
+  .zone-4 {
+    left: 985px;
+    top: 216px;
+  }
+  .zone-5 {
+    left: 1235px;
+    top: 216px;
+  }
+  .zone-6 {
+    left: 1435px;
+    top: 322px;
+  }
+  .zone-7 {
+    left: 1210px;
+    top: 425px;
+  }
+  
+  .zone-8 {
+    left: 115px;
+    top: 610px;
+  }
+  .zone-9 {
+    left: 335px;
+    top: 538px;
+  }
+  .zone-10 {
+    left: 525px;
+    top: 647px;
+  }
+  .zone-11 {
+    left: 335px;
+    top: 760px;
+  }
+  .zone-12 {
+    left: 115px;
+    top: 868px;
+  }
+  
+  .zone-13 {
+    left: 690px;
+    top: 438px;
+  }
+  .zone-14 {
+    left: 918px;
+    top: 438px;
+  }
+  .zone-15 {
+    left: 980px;
+    top: 640px;
+  }
+  .zone-16 {
+    left: 922px;
+    top: 838px;
+  }
+  .zone-17 {
+    left: 725px;
+    top: 713px;
+  }
+  
+  .zone-18 {
+    left: 1210px;
+    top: 598px;
+  }
+  .zone-19 {
+    left: 1435px;
+    top: 533px;
+  }
+  .zone-20 {
+    left: 1435px;
+    top: 757px;
+  }
+  
+  .zone-21 {
+    left: 1128px;
+    top: 815px;
+  }
+  .zone-22 {
+    left: 275px;
+    top: 965px
+  }
+  .zone-23 {
+    left: 770px;
+    top: 965px
+  }
+  .zone-24 {
+    left: 1300px;
+    top: 965px
+  }
+} */
+
+/* .pass-1 {
+  left: 290px;
+  top: 95px
+}
+.pass-2 {
+  left: 425px;
+  top: 310px
+}
+.pass-3 {
+  left: 140px;
+  top: 250px
+}
+
+.pass-4 {
+  left: 1140px;
+  top: 205px;
+}
+.pass-5 {
+  left: 1455px;
+  top: 215px;
+}
+.pass-6 {
+  left: 1355px;
+  top: 400px;
+}
+.pass-7 {
+  left: 1105px;
+  top: 355px;
+}
+
+.pass-8 {
+  left: 265px;
+  top: 598px;
+}
+.pass-9 {
+  left: 545px;
+  top: 540px;
+}
+.pass-10 {
+  left: 545px;
+  top: 795px;
+}
+.pass-11 {
+  left: 370px;
+  top: 670px;
+}
+.pass-12 {
+  left: 370px;
+  top: 890px;
+}
+.pass-13 {
+  left: 153px;
+  top: 760px;
+}
+.pass-14 {
+  left: 166px;
+  top: 995px;
+}
+
+.pass-15 {
+  left: 832px;
+  top: 430px;
+}
+.pass-16 {
+  left: 718px;
+  top: 597px;
+}
+.pass-17 {
+  left: 1010px;
+  top: 560px;
+}
+.pass-18 {
+  left: 883px;
+  top: 700px;
+}
+.pass-19 {
+  left: 1015px;
+  top: 770px;
+}
+.pass-20 {
+  left: 860px;
+  top: 805px;
+}
+.pass-21 {
+  left: 870px;
+  top: 910px;
+}
+
+.pass-22 {
+  left: 1160px;
+  top: 705px;
+}
+.pass-23 {
+  left: 1360px;
+  top: 592px;
+}
+.pass-24 {
+  left: 1470px;
+  top: 675px;
+}
+.pass-25 {
+  left: 1373px;
+  top: 847px;
+}
+.pass-26 {
+  left: 1260px;
+  top: 895px;
+}
+
+.pass-27 {
+  left: 445px;
+  top: 998px;
+}
+.pass-28 {
+  left: 665px;
+  top: 998px;
+}
+.pass-29 {
+  left: 950px;
+  top: 998px;
+}
+.pass-30 {
+  left: 1188px;
+  top: 998px;;
+} */
+
+.card-display {
+  padding: 10px 10px 10px 10px;
+  width: 800px;
+  height: 1px;
+  position: fixed;
+  top: 40px;
+  left: 220px;
+  z-index: 101;
+}
+
+.item-card {
+  width: 105px;
+  height: 146px;
+  margin-bottom: 4px;
+  margin-right: 2px;
+  margin-left: 2px;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.item-card:hover {
+  cursor: pointer;
+}
+
+.item-card-hover {
+  width: 555px;
+  height: 313px;
+  position: absolute;
+  background-color: white;
+  margin-left: 0px;
+  margin-top: -480px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+
+  .card-detail {
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+  }
+  .card-name {
+    text-align: center;
+  }
+  .card-desc {
+    text-align: left;
+  }
+
+  .item-card {
+    width: 210px;
+    height: 292px;
+  }
+}
+
+.item-card-sm {
+  width: 50px;
+  height: 66px;
+}
+
+.item-card-md {
+  width: 150px;
+  height: 210px;
+}
+
+.item-card-lg {
+  width: 300px;
+  height: 420px;
+}
+
+.admin-board {
+  padding: 10px 10px 10px 10px;
+  width: 305px;
+  height: 350px;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.30);
+  background-color: wheat;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 101;
+}
+
+.player-board {
+  padding: 10px 10px 10px 10px;
+  width: 1000px;
+  height: 350px;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.3);
+  background-color: wheat;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+
+  .player-name {
+  }
+  .inner-wrapper {
+    display: flex;
+  }
+  .player-action-buttons {
+    width: 175px;
+    padding-right: 5px;
+    .btn {
+      width: 155px;
+      margin-bottom: 5px;
+    }
+    .stat-changer-wrapper {
+      float: right;
+      margin-right: 20px;
+      .stat-changer {
+        margin-right: 3px;
+        font-size: 20px;
+      }
+    }
+    .small-btn {
+      width: 77px;
+    }
+  }
+  .player-detail {
+    width: 250px;
+  }
+  .inventory {
+    text-align: center;
+  }
+  .player-status {
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-left: 20px;
+    width: 40px;
+    height: 160px;
+    background-color: white;
+    border: 1px solid #333;
+  }
+  .player-status img {
+    width: 30px;
+    margin-bottom: 2px;
+    display: block;
+  }
+  .hero-card {
+    margin-left: 20px;
+    width: 160px;
+    height: 160px;
+    background-size: cover !important;
+    margin-bottom: 10px;
+  }
+  .hero-card-sm {
+    width: 100px;
+    height: 100px;
+    background-size: cover !important;
+  }
+  .equip-cards {
+    padding-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 160px;
+    width: 230px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .action-cards {
+    padding-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 160px;
+    width: 555px;
+    margin-bottom: 10px;
+  }
+  .backpack-cards {
+    padding-top: 6px;
+    background-color: white;
+    height: 160px;
+    width: 555px;
+  }
+}
+
+.long-dropdown-menu {
+  max-height: 700px !important;
+  overflow-y: scroll !important;
+}
+
+.skin-dropdown-menu {
+  width: 400px !important;
+  white-space: wrap !important;
+}
+
+.dropdown-item {
+  white-space: wrap !important;
+}
+
+.objective-pick-wrapper > div {
+  width: calc(100% / 2);
+  padding: 10px 10px 10px 10px;
+}
+
+.objective-pick-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+
+  .objective-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .objective-pick-inner-wrapper {
+    height: 100%;
+    background-color: wheat;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.05);
+  }
+  .objective-pick-inner-wrapper > div {
+    min-height: 205px;
+  }
+  .pick-objective-btn {
+    bottom: 0px;
+    width: 200px;
+  }
+  .disabled-objective {
+    opacity: 0.6;
+    background-color: lightgray;
+  }
+}
+
+.none-animation {
+  transition: none !important;
+  animation: none !important;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+.blink_me_sec {
+  animation: blinker 0.5s linear 1;
+}
+
+.blink_me_few_sec {
+  animation: blinker 0.5s linear 2;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.underline {
+  border-bottom: 1px dotted black;
+}
+
+.tooltip1 {}
+
+.tooltip1 .tooltiptext {
+  visibility: hidden;
+  width: 307px;
+  height: 200px;
+  background-color: white;
+  color: #333;
+  border-radius: 6px;
+  padding: 5px 5px 5px 5px;
+  margin-top: -80px;
+  margin-left: 27px;
+  box-shadow: 0 0 0 0.15rem rgba(0, 0, 0, 0.20);
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+
+  .tooltip-card-preview {
+    margin-right: 10px;
+  }
+
+  .item-card {
+    width: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+.tooltip1:hover .tooltiptext {
+  visibility: visible;
+  cursor: pointer;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.breathing {
+  animation: breathing 5s ease-out infinite normal;
+}
+
+@keyframes breathing {
+  0% {
+    transform: scale(0.95);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
 }
